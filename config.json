@@ -1,0 +1,43 @@
+{
+    "name": "Hide Save and Return Button",
+    "namespace": "FredHutchNamespace\\SaveReturnToPortalClass", 
+    "description": "This REDCap module alters the Save & Return button for all surveys in a project and redirects them to a participant portal.",
+    "authors": [
+        {
+             "name": "Paul Litwin",
+             "email": "plitwin@fredhutch.org",
+             "institution": "Fred Hutchinson Cancer Research Center"
+        },
+        {
+            "name": "Andy Martin",
+            "email": "andy123@stanford.edu",
+            "institution": "Stanford University"
+        }
+     ],
+     "permissions": [
+        "redcap_survey_page",
+        "redcadp_survey_complete",
+        "redcap_save_record"
+      ],
+
+      "project-settings": [
+          {
+                "key": "global_show_custom_button",
+                "name": "Display alternative save & return button with custom text that will return user to configurable URL?",
+                "required": false,
+                "type": "checkbox"
+          },
+          {
+                "key": "global_custom_button_text",
+                "name": "<b>Button text</b> for alternative button",
+                "required": false,
+                "type": "text"
+            },
+            {
+                "key": "global_custom_button_url",
+                "name": "<b>URL</b> to use for alternative button action",
+                "required": false,
+                "type": "text"
+            }
+    ]
+ }
